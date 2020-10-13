@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    background-image: url(https://www.gptq.qld.edu.au/wp-content/uploads/australia-wallpaper-2.jpg);
+    background-size: cover;
+}
+
+#name .country {
+    border-radius: 50%;
+    padding: .3rem;
+    margin-left: 1rem;
+    background-color: orange;
+    font-size: 1rem;
+}
+
+#submit-btn,
+#search {
+    background: rgba(245, 245, 245, .7);
+    color: #000;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, .5);
+    color: whitesmoke;
+}
+
+.modal-body>* {
+    height: 250px;
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+}
+
+#weatherModal .modal-body .current-temp {
+    font-size: 8rem;
+}
+
+#weatherModal .modal-body .current-temp span {
+    font-size: 5rem;
+}
