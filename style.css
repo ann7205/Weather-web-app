@@ -32,6 +32,7 @@ body {
     height: 250px;
     letter-spacing: .3rem;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #weatherModal .modal-body .current-temp {

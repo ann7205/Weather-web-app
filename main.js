@@ -15,17 +15,17 @@ function weatherTemplate(data) {
     </div>
     <!-- modal body  -->
     <div class="modal-body row">
-        <div class="weather-info col-6">
+        <div class="weather-info col-6 pr-4">
             <div class="temp-wraped d-flex">
                 <p class="min-temp">${Math.trunc(data.main.temp_min)}<span><i class="fas fa-temperature-low font-weight-light"></i></span></p>
                 <p class="max-temp">${Math.trunc(data.main.temp_max)}<span><i class="fas fa-temperature-high font-weight-light"></i></span></p>
             </div>
             <h1 class="current-temp">${Math.trunc(data.main.temp)}<span>&#8451</span></h1>
-            <p class="feel-temp">Feels like<span>${Math.trunc(data.main.feels_like)}</span><span>&deg</span></p>
+            <p class="feel-temp text-right">Feels like<span>${Math.trunc(data.main.feels_like)}</span><span>&deg</span></p>
         </div>
-        <div class="weather-pic col-6">
+        <div class="weather-pic col-6 pl-4">
             <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" width="150px">
-            <p>${data.weather[0].main}</p>
+            <p class="mb-4">${data.weather[0].main}</p>
             <p>Humidity <span>${data.main.humidity}</span>%</p>
         </div>
     </div>
